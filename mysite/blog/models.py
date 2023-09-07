@@ -33,6 +33,7 @@ class Post(models.Model):
     published = PublishedManager()  # конкретний менеджер
     tags = TaggableManager()
 
+
     class Meta:
         ordering = ['-publish']
         indexes = [
